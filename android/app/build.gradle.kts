@@ -95,4 +95,9 @@ dependencies {
     implementation(libs.okhttp)
 
     implementation(libs.retrofit)
+
+    // Lynx debug tools
+    implementation(libs.lynx.devtool)
+
+    implementation(libs.lynx.service.devtool)
 }
