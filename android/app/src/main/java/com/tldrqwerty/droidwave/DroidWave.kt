@@ -13,6 +13,7 @@ import com.lynx.service.log.LynxLogService
 import com.lynx.tasm.service.LynxServiceCenter
 import com.lynx.tasm.LynxEnv
 import com.tldrqwerty.droidwave.modules.NativeLocalStorageModule
+import com.tldrqwerty.droidwave.providers.DroidWaveTemplateProvider
 
 class DroidWave : Application() {
 
@@ -50,7 +51,7 @@ class DroidWave : Application() {
         LynxEnv.inst().init(
             this,
             null,
-            null,
+            DroidWaveTemplateProvider(),
             null
         )
         // Enable Lynx Debug

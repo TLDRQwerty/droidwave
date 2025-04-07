@@ -1,17 +1,16 @@
-package com.tldrqwerty.droidwave
+package com.tldrqwerty.droidwave.providers
 
 import android.content.Context
 import android.util.Log
 import com.lynx.tasm.provider.AbsTemplateProvider
+import com.tldrqwerty.droidwave.TemplateApi
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Response
 import retrofit2.Retrofit
 import java.io.IOException
 
-class DemoTemplateProvider(context: Context) : AbsTemplateProvider() {
-
-    private var mContext: Context = context.applicationContext
+class DroidWaveTemplateProvider() : AbsTemplateProvider() {
 
     override fun loadTemplate(uri: String, callback: Callback) {
         val retrofit = Retrofit.Builder().baseUrl("https://example.com/").build()
